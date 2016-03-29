@@ -1,0 +1,18 @@
+{
+	"name": "Press Export",
+	"description": "A WordPress plugin to automatically generate DOCX, PDF, RTF and HTML files on publish of any post",
+	"keywords": ["word", "doc", "docx", "pdf", "rtf", "html", "export"],
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Tyler Bailey",
+			"email": "tylerb.media@gmail.com",
+			"homepage": "http://tylerb.me"
+		}
+	],
+	"type": "wordpress-plugin",
+    "require": {
+       "phpoffice/phpword": "v0.12.1",
+       "dompdf/dompdf": "0.6.2"
+    }
+}
