@@ -11,17 +11,38 @@
 
 class Press_Export_Base {
 
+	/**
+     * Class instance variable
+     *
+     * @since 1.0.0
+     *
+     * @type object ::self
+     */
 	public static $instance;
 
+	/**
+     * URL of exported files
+     *
+     * @since 1.0.0
+     *
+     * @type string
+     */
 	public $export_url;
+
+	/**
+     * Dirtectory to save exported files
+     *
+     * @since 1.0.0
+     *
+     * @type string
+     */
 	protected $export_dir;
 
 	/**
-	 * __construct()
+	 * Define class & plugin variables
 	 *
 	 * @return 	null
-	 * @author  Tyler Bailey
-	 * @since    1.0.0
+	 * @since   1.0.0
 	 */
 	public function __construct() {
 		// Get self instance
@@ -34,13 +55,10 @@ class Press_Export_Base {
 	}
 
 	/**
-	 * get_instance()
-	 *
 	 * Return instance of base class
 	 *
 	 * @return 	null
-	 * @author  Tyler Bailey
-	 * @since    1.0.0
+	 * @since   1.0.0
 	 */
 	public static function get_instance() {
 		if(self::$instance === null) {
@@ -51,14 +69,11 @@ class Press_Export_Base {
 	}
 
 	/**
-	 * get_document_url($file)
-	 *
-	 * Return the url of the generated document
+	 * Return the url of the supplied document
 	 *
 	 * @param	string $file
 	 * @return 	string
-	 * @author  Tyler Bailey
-	 * @since    1.0.0
+	 * @since   1.0.0
 	 */
 	public function get_document_url($file) {
 		return $this->export_url . '/' . $file;

@@ -12,12 +12,9 @@
 class Press_Export {
 
 	/**
-	 * __construct()
-	 *
 	 * Plugin initialization functions
 	 *
 	 * @return 	null
-	 * @author  Tyler Bailey
 	 * @since    1.0.0
 	 */
 	public function __construct() {
@@ -27,12 +24,9 @@ class Press_Export {
 
 
 	/**
-	 * load_dependencies()
-	 *
 	 * Loads all required plugin files and istantiates classes
 	 *
 	 * @return 	null
-	 * @author  Tyler Bailey
 	 * @since   1.0.0
 	 */
 	protected function load_dependencies() {

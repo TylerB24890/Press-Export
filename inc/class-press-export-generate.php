@@ -11,17 +11,37 @@
 
 class Press_Export_Generate extends Press_Export_Base {
 
-	private $domPDFRenderPath,
-			$php_word,
-			$writers;
+	/**
+     * Location of the domPDF library
+     *
+     * @since 1.0.0
+     *
+     * @type string
+     */
+	private $domPDFRenderPath;
 
 	/**
-	 * __construct()
-	 *
+     * PhpWord Class Object
+     *
+     * @since 1.0.0
+     *
+     * @type object
+     */
+	private $php_word;
+
+	/**
+     * The document formats we are generating
+     *
+     * @since 1.0.0
+     *
+     * @type array
+     */
+	private $writers;
+
+	/**
 	 * Class initialization functions
 	 *
 	 * @return 	null
-	 * @author  Tyler Bailey
 	 * @since   1.0.0
 	 */
 	public function __construct() {
@@ -46,14 +66,11 @@ class Press_Export_Generate extends Press_Export_Base {
 	}
 
 	/**
-	 * generate_doc($ID, $post)
-	 *
 	 * Generates the files after a post is published
 	 *
 	 * @param	int $ID
 	 * @param	object $post
 	 * @return 	null || string
-	 * @author  Tyler Bailey
 	 * @since   1.0.0
 	 */
 	public function generate_doc($ID, $post) {
@@ -102,8 +119,8 @@ class Press_Export_Generate extends Press_Export_Base {
 	 * @param 	string $filename
 	 * @param 	array $writers
 	 * @param	object $post
+	 * @param	object $section
 	 * @return 	boolean
-	 * @author	Tyler Bailey
 	 * @since   1.0.0
 	 */
 	private function write($filename, $writers, $post, $section) {
@@ -132,7 +149,6 @@ class Press_Export_Generate extends Press_Export_Base {
 	 *
 	 * @param 	object $post
 	 * @return 	null
-	 * @author 	Tyler Bailey
 	 * @since	1.0.0
 	 */
 	private function set_doc_properties($post) {
@@ -147,7 +163,6 @@ class Press_Export_Generate extends Press_Export_Base {
 	 * Set document paragraph and font styles
 	 *
 	 * @return 	null
-	 * @author 	Tyler Bailey
 	 * @since	1.0.0
 	 */
 	private function set_doc_styles() {
