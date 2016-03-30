@@ -10,7 +10,7 @@
  *
  * @link              http://tylerb.me
  * @since             1.0.0
- * @package           Press Export
+ * @package           Press-Export
  *
  * @wordpress-plugin
  * Plugin Name:       Press Export

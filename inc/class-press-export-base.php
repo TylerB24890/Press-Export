@@ -5,8 +5,8 @@
  *
  * @author 	Tyler Bailey
  * @version 1.0.0
- * @package Press Export
- * @subpackage Press Export/includes
+ * @package Press-Export
+ * @subpackage Press-Export/includes
  */
 
 class Press_Export_Base {
