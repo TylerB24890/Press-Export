@@ -4,7 +4,7 @@
  * The base class for the Press Export plugin
  *
  * @author 	Tyler Bailey
- * @version 1.0.0
+ * @version 0.5.0
  * @package Press-Export
  * @subpackage press-export/inc
  */
@@ -19,7 +19,7 @@ if(!class_exists('Press_Export_Base')) :
 		/**
 	     * Plugin slug
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type string
 	     */
@@ -28,7 +28,7 @@ if(!class_exists('Press_Export_Base')) :
 		/**
 	     * Class instance variable
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type object ::self
 	     */
@@ -37,7 +37,7 @@ if(!class_exists('Press_Export_Base')) :
 		/**
 	     * URL of exported files
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type string
 	     */
@@ -46,7 +46,7 @@ if(!class_exists('Press_Export_Base')) :
 		/**
 	     * Dirtectory to save exported files
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type string
 	     */
@@ -56,7 +56,7 @@ if(!class_exists('Press_Export_Base')) :
 		 * Define class & plugin variables
 		 *
 		 * @return 	null
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		public function __construct() {
 			// Get self instance
@@ -74,7 +74,7 @@ if(!class_exists('Press_Export_Base')) :
 		 * Return instance of base class
 		 *
 		 * @return 	null
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		public static function get_instance() {
 			if(self::$instance === null) {
@@ -89,7 +89,7 @@ if(!class_exists('Press_Export_Base')) :
 		 *
 		 * @param	string $file
 		 * @return 	string
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		public function get_document_url($file) {
 			return $this->export_url . '/' . $file;

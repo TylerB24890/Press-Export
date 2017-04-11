@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              	http://elexicon.com
- * @since             	1.0.0
+ * @since             	0.5.0
  * @package           Press-Export
  *
  * @wordpress-plugin
  * Plugin Name:       Press Export
  * Plugin URI:        	http://tylerb.me/plugins/press-export.zip
  * Description:       	A plugin to automatically generate DOCX, PDF, RTF and HTML files on publish of any post
- * Version:           	1.0.0
+ * Version:           	0.5.0
  * Author:            	Tyler Bailey
  * Author URI:        http://tylerb.me
  * License:           	GPL-2.0+
@@ -32,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Define constants
-define('PE_VERSION', '1.0.0');
+define('PE_VERSION', '0.5.0');
 define('PE_GLOBAL_DIR', plugin_dir_path( __FILE__ ));
 define('PE_GLOBAL_URL', plugin_dir_url( __FILE__ ));
 define('PE_REQUIRED_PHP_VERSION', '5.3');
@@ -67,7 +67,7 @@ require PE_GLOBAL_DIR .  'inc/class-press-export.php';
 /**
  * Begins execution of the plugin.
  *
- * @since    1.0.0
+ * @since    0.5.0
  */
 if(!function_exists('press_export_init')) {
 	function press_export_init() {

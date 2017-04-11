@@ -5,7 +5,7 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @author 	Tyler Bailey
- * @version 1.0.0
+ * @version 0.5.0
  * @package Press-Export
  * @subpackage press-export/inc
  */
@@ -19,7 +19,7 @@ if(!class_exists('Press_Export_Activator')) :
 		/**
 		 * Fired upon plugin activation
 		 *
-		 * @since    1.0.0
+		 * @since    0.5.0
 		 */
 		public static function activate() {
 
@@ -31,7 +31,7 @@ if(!class_exists('Press_Export_Activator')) :
 		/**
 		 * Creates the 'press-export' directory in the '/uploads/' directory
 		 *
-		 * @since	1.0.0
+		 * @since	0.5.0
 		 * @return 	null | string
 		 */
 		private function pe_create_directory() {
@@ -50,7 +50,7 @@ if(!class_exists('Press_Export_Activator')) :
 		/**
 		 * Checks if the system requirements are met
 		 *
-		 * @since	1.0.0
+		 * @since	0.5.0
 		 * @return 	bool True if system requirements are met, die() message if not
 		 */
 		private function pe_system_requirements_met() {

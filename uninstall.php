@@ -3,7 +3,7 @@
  * Fired when the plugin is uninstalled.
  *
  * @link       http://tylerb.me
- * @since      1.0.0
+ * @since      0.5.0
  *
  * @package    Press-Export
  */

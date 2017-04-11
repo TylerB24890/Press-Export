@@ -18,7 +18,7 @@ if(!class_exists('Press_Export')) :
 		/**
 	     * Plugin slug
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type string
 	     */
@@ -27,7 +27,7 @@ if(!class_exists('Press_Export')) :
 		/**
 	     * Plugin version
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type string
 	     */
@@ -37,11 +37,11 @@ if(!class_exists('Press_Export')) :
 		 * Plugin initialization functions
 		 *
 		 * @return 	null
-		 * @since    1.0.0
+		 * @since    0.5.0
 		 */
 		public function __construct() {
 			$this->plugin_slug = 'press-export';
-			$this->version = '1.0.0';
+			$this->version = '0.5.0';
 
 			$this->set_locale();
 			$this->load_dependencies();
@@ -52,7 +52,7 @@ if(!class_exists('Press_Export')) :
 		 * Loads all required plugin files and istantiates classes
 		 *
 		 * @return 	null
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		private function load_dependencies() {
 			require_once PE_GLOBAL_DIR . 'inc/class-press-export-base.php';
@@ -66,7 +66,7 @@ if(!class_exists('Press_Export')) :
 		 * Loads the plugin text-domain for internationalization
 		 *
 		 * @return 	null
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		private function set_locale() {
 			load_plugin_textdomain( $this->plugin_slug, false, PE_GLOBAL_DIR . 'language' );

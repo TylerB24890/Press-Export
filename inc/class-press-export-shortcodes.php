@@ -19,7 +19,7 @@ if(!class_exists('Press_Export_Shortcodes')) :
 		 * Class initialization functions
 		 *
 		 * @return 	null
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		public function __construct() {
 			parent::__construct();

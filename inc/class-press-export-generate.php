@@ -19,7 +19,7 @@ if(!class_exists('Press_Export_Generate')) :
 		/**
 	     * Location of the domPDF library
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type string
 	     */
@@ -28,7 +28,7 @@ if(!class_exists('Press_Export_Generate')) :
 		/**
 	     * PhpWord Class Object
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type object
 	     */
@@ -37,7 +37,7 @@ if(!class_exists('Press_Export_Generate')) :
 		/**
 	     * The document formats we are generating
 	     *
-	     * @since 1.0.0
+	     * @since 0.5.0
 	     *
 	     * @type array
 	     */
@@ -47,7 +47,7 @@ if(!class_exists('Press_Export_Generate')) :
 		 * Class initialization functions
 		 *
 		 * @return 	null
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		public function __construct() {
 
@@ -76,7 +76,7 @@ if(!class_exists('Press_Export_Generate')) :
 		 * @param	int $ID
 		 * @param	object $post
 		 * @return 	null || string
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		public function generate_doc($ID, $post) {
 
@@ -126,7 +126,7 @@ if(!class_exists('Press_Export_Generate')) :
 		 * @param	object $post
 		 * @param	object $section
 		 * @return 	boolean
-		 * @since   1.0.0
+		 * @since   0.5.0
 		 */
 		private function write($filename, $writers, $post, $section) {
 
@@ -154,7 +154,7 @@ if(!class_exists('Press_Export_Generate')) :
 		 *
 		 * @param 	object $post
 		 * @return 	null
-		 * @since	1.0.0
+		 * @since	0.5.0
 		 */
 		private function set_doc_properties($post) {
 			$properties = $this->php_word->getDocInfo();
@@ -168,7 +168,7 @@ if(!class_exists('Press_Export_Generate')) :
 		 * Set document paragraph and font styles
 		 *
 		 * @return 	null
-		 * @since	1.0.0
+		 * @since	0.5.0
 		 */
 		private function set_doc_styles() {
 
