@@ -8,18 +8,18 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://tylerb.me
- * @since             1.0.0
+ * @link              	http://elexicon.com
+ * @since             	1.0.0
  * @package           Press-Export
  *
  * @wordpress-plugin
  * Plugin Name:       Press Export
- * Plugin URI:        http://tylerb.me
- * Description:       A plugin to automatically generate DOCX, PDF, RTF and HTML files on publish of any post
- * Version:           1.0.0
- * Author:            Tyler Bailey
+ * Plugin URI:        	http://tylerb.me/plugins/press-export.zip
+ * Description:       	A plugin to automatically generate DOCX, PDF, RTF and HTML files on publish of any post
+ * Version:           	1.0.0
+ * Author:            	Tyler Bailey
  * Author URI:        http://tylerb.me
- * License:           GPL-2.0+
+ * License:           	GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       press-export
  */
@@ -63,11 +63,6 @@ register_deactivation_hook( __FILE__, 'deactivate_press_export' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require PE_GLOBAL_DIR .  'inc/class-press-export.php';
-
-/**
- * Global Press Export functions for use outside of plugin objects
- */
-require PE_GLOBAL_DIR . 'inc/press-export-functions.php';
 
 /**
  * Begins execution of the plugin.
